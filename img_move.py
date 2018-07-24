@@ -23,5 +23,5 @@ for dirname in os.listdir(train_path):
     for img_name in val_list:
         if not os.path.exists(img_path_val):
             os.makedirs(img_path_val) 
-        shutil.move(img_path+"/"+img_name, val_path)
+        shutil.move(img_path+"/"+img_name, img_path_val)
 print("done")
